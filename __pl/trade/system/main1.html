@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>MAIN | Trade System</title>
+  <meta property="og:title" content="MAIN | Trade System">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="./assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple_touch_icon.png">
+  <link rel="stylesheet" href="./assets/css/app.css">
+  <style>
+    @media screen and (min-width: 768px) {
+      html {
+        font-size: 36% !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper" class="wrapper">
+    <div class="p-start">
+      <div class="start-main">
+        <header class="start-header">
+          <h1><a href="#" class="start-header__logo"><img src="./assets/img/system/logo.png" alt="Trade System"></a></h1>
+        </header>
+        <div class="start-total">
+          <dl>
+            <dt>現在の合計資産</dt>
+            <dd>50,000円</dd>
+          </dl>
+        </div>
+        <div class="p-start__inner">
+          <div class="start-system">
+            <div class="start-system__circle">
+              <img src="./assets/img/system/circle_off.png" alt="Trade System System OFF 運用停止中">
+            </div>
+            <form method="post" action="">
+              <button class="send_btn send_btn01" type="submit" name="start" value="START"><img src="./assets/img/system/off_button.png" alt="OFF"></button>
+            </form>
+          </div>
+        </div>
+        <div class="start-gr">
+          <div class="start-gr__item">
+            <label class="lbl" for="f_txt01">運用元金</label>
+            <input id="f_txt01" class="textfield f_txt01 t-r" type="text" value="" placeholder="120,000円">
+          </div>
+          <div class="start-gr__item">
+            <label class="lbl" for="f_txt02">出金申請</label>
+            <input id="f_txt02" class="textfield f_txt02" type="text" value="" placeholder="円">
+            <button type="submit" class="btn-submit02"><img src="./assets/img/system/pay.png" alt="出金"></button>
+          </div>
+        </div>
+        <div class="start-chart-wrap">
+          <div class="start-chart">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+                {
+                  "width": "100%",
+                    "height": "300",
+                      "currencies": [
+                        "EUR",
+                        "USD",
+                        "JPY",
+                        "GBP",
+                        "CHF",
+                        "AUD"
+                      ],
+                        "isTransparent": false,
+                          "colorTheme": "light",
+                            "locale": "ja"
+                }
+              </script>
+            </div>
+            <!-- TradingView Widget END -->
+          </div>
+          <div class="start-chart">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+              <script type="text/javascript">
+                new TradingView.widget(
+                  {
+                    "width": "100%",
+                    "height": "350px",
+                    "symbol": "COINBASE:BTCUSD",
+                    "interval": "1",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "ja",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "hide_top_toolbar": true,
+                    "save_image": false,
+                    "container_id": "tradingview_fc821"
+                  }
+                );
+              </script>
+            </div>
+            <!-- TradingView Widget END -->
+          </div>
+        </div>
+      </div>
+      <div class="start-footer">
+        <p><strong>リスク警告</strong><br><br>バイナリーオプション及び金融派生商品(デリバティブ)の取引には重大なリスクが伴い、当初の投資額を失う可能性や、多くの場合、当初の投資額を超える損失を被ることもあるため、損失分を十分に考慮してお取引をすることをお勧めしております。<br>当社は、マーシャル諸島共和国の事業会社法の規定のもと許可を受けている企業になります。当ウェブサイト上の商品・サービスは、アメリカやニュージーランド等のオプション取引に対して規制がされている国や地域ではご利用ができません。<br>そして当ウェブサイトの情報は、オプション取引の禁止国では、お客様に はご案内できるものではない旨をご理解ください。<br>暗号資産取引におけるリスクについて十分に理解し、ご納得された上で、お客様のご責任とご判断で暗号資産の取引を行ってください。</p>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer-copyright"><small>Copyright 2024 Trade System All Rights Reserved.</small></div>
+        </div>
+      </footer>
+      <!-- /footer -->
+    </div>
+  </div>
+  <!-- #wrapper -->
+</body>
+
+</html>

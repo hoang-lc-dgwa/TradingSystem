@@ -1,0 +1,306 @@
+@charset "utf-8";
+
+@import "_mixin/mixin";
+@import "_component/_normalize.scss";
+@import "_component/_animation.scss";
+@import "_component/_common.scss";
+
+html {
+  font-size: 62.5%;
+
+  @include sp() {
+    font-size: 1.09289617vw; //10/915*100
+  }
+}
+
+body {
+  font-family: serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: $lh;
+  color: $color_base;
+  overflow-wrap: break-word;
+  font-weight: 300;
+  overflow-y: auto;
+  background: #2c058f;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  // overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(#000, 0.3);
+
+  @include pc {
+    width: 117.2rem;
+
+    &.wrapper-lp2 {
+      width: 100%;
+      min-width: 120rem;
+    }
+  }
+}
+
+@include pc {
+  .sp {
+    display: none !important;
+  }
+
+  a[href^=tel] {
+    pointer-events: none;
+    text-decoration: none;
+    opacity: 1 !important;
+    cursor: default !important;
+  }
+}
+
+@include sp {
+  .pc {
+    display: none !important;
+  }
+
+  body {
+    &.open {
+      overflow: hidden;
+    }
+  }
+}
+
+.lp-inner {
+  max-width: 101rem;
+  margin: 0 auto;
+
+  @include sp {
+    max-width: 100%;
+    padding: 0 4rem;
+  }
+}
+
+.row {
+  max-width: 108rem;
+  margin: 0 auto;
+
+  @include sp {
+    padding: 0 2rem;
+  }
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.c-white {
+  color: #fff;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fit {
+  font-family: "object-fit: cover;";
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.js-parallax {
+  transition: .2s cubic-bezier(.22, .94, .44, 1);
+  will-change: transform, opacity
+}
+
+.c-copy {
+  line-height: 1.75;
+}
+
+.footer {
+  padding: 4rem 0;
+  background: #000;
+
+  &-nav {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        padding: 0 3rem 3rem;
+
+        a {
+          color: #fff;
+          @include fz(28, 40);
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  &-copyright {
+    text-align: center;
+    color: #fff;
+    @include fz(40, 60);
+    font-weight: 300;
+
+    small {
+      display: block;
+    }
+  }
+}
+
+@include sp {
+  .footer {
+    &-copyright {
+      font-size: 5rem;
+    }
+  }
+}
+
+.p-lp {
+  background: #fff;
+  overflow: hidden;
+
+  .cm-bg {
+    background: rgb(54, 25, 88);
+    background: linear-gradient(to right, rgba(27, 3, 42, 1), rgba(54, 25, 88, 1));
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  .cta {
+    text-align: center;
+
+    &__form {
+      padding: 0.5rem 0 9rem;
+    }
+
+    .count {
+      color: $color_main;
+      font-size: 8rem;
+      line-height: 1;
+      letter-spacing: 0.05em;
+      font-weight: 500;
+      padding-top: 2rem;
+      margin-bottom: 2rem;
+
+      .timer {
+        display: inline-block;
+        animation-iteration-count: 3602;
+        animation-delay: 0.5s;
+        font-weight: bold;
+        @include fz(150, 200);
+        color: #fff;
+        font-style: italic;
+      }
+    }
+
+    &__input-wrap {
+      width: 80%;
+      margin: 2rem auto 6rem;
+    }
+
+    &__input {
+      background: #fff;
+      box-shadow: none;
+      display: block;
+      outline: none;
+      @include fz(42, 60);
+      padding: 2.5rem 3rem;
+      text-align: center;
+      border: none;
+      border-radius: 0;
+      font-family: serif;
+      font-weight: 300;
+      color: #555;
+      width: 100%;
+      border: 2px solid #8d8b8b;
+      text-align: center;
+
+      &::placeholder {
+        color: #8d8b8b;
+        opacity: 1;
+      }
+
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 8rem white inset !important;
+      }
+    }
+
+    &__btn {
+      max-width: 72%;
+      padding: 0;
+      margin: 0 auto;
+
+      a,
+      button {
+        display: block;
+        border: none;
+        box-shadow: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: transparent;
+        padding: 0;
+
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+
+  .about {
+    &__main {
+      position: relative;
+
+      &__pht {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 34rem;
+        max-width: 37.15847%;
+      }
+    }
+  }
+
+  .step {
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      width: 33.3333%;
+    }
+  }
+}
+
+@include sp {
+  .p-lp {
+    .cta {
+      &__countdown {
+        font-size: 10rem;
+      }
+
+      &__input {
+        font-size: 4rem;
+        padding: 3rem 2rem;
+        border-width: 2px;
+      }
+    }
+  }
+}

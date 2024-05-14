@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+@import "_mixin/mixin";
+
+@import "_component/_normalize.scss";
+@import "_component/_animation.scss";
+@import "_component/_common.scss";
+
+$fz: 6.8rem;
+$lh: 1.45;
+$color_green: #06c21f;
+$color_purple: #8300b8;
+$color_red: #ff3131;
+$color_blue: #495be9;
+$color_gray: #2e2e2e;
+
+.p-thanks {
+  text-align: center;
+  font-weight: 500;
+  background: #fff;
+}
+
+.p-thanks .c-red {
+  color: $color_red;
+}
+
+.p-thanks .c-green {
+  color: $color_green;
+}
+
+.p-thanks .c-purple {
+  color: $color_purple;
+}
+
+.p-thanks .c-blue {
+  color: $color_blue;
+}
+
+.p-thanks .c-gray {
+  color: $color_gray;
+}
+
+.p-thanks .tks-header img {
+  display: block;
+  width: 100%;
+}
+
+.p-thanks .tks-lead {
+  background: #fff;
+  font-size: $fz;
+  line-height: $lh;
+  padding: 12rem 3rem;
+
+  &__arrow {
+    width: 17.2rem;
+    margin: 0 auto 8rem;
+
+    img {
+      width: 100%;
+      vertical-align: bottom;
+      display: block;
+    }
+  }
+
+  &__email {
+    padding: 2rem 0;
+    display: inline-block;
+  }
+
+  &__note {
+    font-size: 70%;
+    color: #ff3131;
+  }
+}
+
+.p-thanks .tks-lead p + p {
+  margin-top: 6rem;
+}
+
+.p-thanks .tks-line {
+  background: #fff;
+  padding: 0 0 12rem;
+}
+
+.p-thanks .tks-line__copy {
+  font-size: $fz;
+  line-height: $lh;
+  margin-top: 12rem;
+  margin-bottom: 4rem;
+}
+
+.p-thanks .tks-line__btn a {
+  display: block;
+  max-width: 76rem;
+  margin: 0 auto;
+}
+
+.p-thanks .tks-line__btn img {
+  display: block;
+  width: 100%;
+}
+
+.p-thanks .tks-step {
+  background: #e9e4f4;
+}
+
+.p-thanks .tks-line-qr {
+  padding: 12rem 0 8rem;
+}
+
+.p-thanks .tks-line-qr__ttl img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.p-thanks .tks-line-qr__content {
+  position: relative;
+  padding: 3rem 0;
+}
+
+.p-thanks .tks-line-qr__box {
+  padding: 3rem 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.p-thanks .tks-line-qr__copy {
+  font-size: $fz;
+  line-height: $lh;
+  margin-top: 2rem;
+}
+
+.p-thanks .tks-line-qr__id {
+  font-size: $fz;
+  line-height: $lh;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  color: $color_green;
+}
+
+.p-thanks .tks-line-qr__qrcode {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .p-thanks .tks-line-qr__qrcode {
+    max-width: 60%;
+  }
+}
+
+.footer {
+  padding: 8rem 0;
+  background: #000;
+
+  &-nav {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        padding: 0 5rem 4.4rem;
+
+        a {
+          color: #fff;
+          @include fz(40, 56);
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &-copyright {
+    text-align: center;
+    color: #fff;
+    @include fz(56, 70);
+    font-weight: 500;
+
+    small {
+      display: block;
+    }
+  }
+}
