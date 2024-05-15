@@ -119,10 +119,12 @@ body {
 
 .p-login {
   position: relative;
+  background: url("../img/system/bg.jpg") no-repeat top center / cover;
 }
 
 .p-login .login-header {
   padding: 3rem 0 10rem;
+  padding: 3rem 0 20rem;
 
   &__logo {
     max-width: 42rem;
@@ -139,70 +141,65 @@ body {
 .p-login .login-main {
   min-height: 100vh;
   padding-top: 1rem;
-  padding-bottom: 12rem;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .p-login__inner {
-  padding: 0 7rem;
+  padding: 0 6rem;
 }
 
 .p-login .login-form {
-  padding: 15rem 8.5rem 10rem;
-  font-weight: bold;
+  padding: 8rem 6rem 10rem;
+  font-weight: 500;
   font-size: 4rem;
   line-height: 1.25;
-  background: #f1f1f1;
-  border-radius: 10rem;
+  background: #00000098;
+  border-radius: 1rem;
 }
 
 .p-login .login-form input.textfield {
-  border-radius: 10rem;
+  border-radius: 1rem;
   background: #fff;
   width: 100%;
   border: none;
   outline: none;
-  padding: 4.8rem 3rem 4.8rem 14.5rem;
+  padding: 4rem;
   position: relative;
-  background: #fff no-repeat left 5.8rem center / 5.6rem 8rem;
-  color: #a6a6a6;
+  color: #333;
   font-size: 4.3rem;
-
-  &#login_mail1 {
-    background-image: url("../img/system/ico_input01.png") !important;
-  }
-
-  &#login_password1 {
-    background-image: url("../img/system/ico_input02.png") !important;
-  }
 
   &:-internal-autofill-selected {
     background-color: #fff;
   }
 
   &::placeholder {
-    color: #a6a6a6;
+    color: #333;
     opacity: 1;
-    font-weight: bold;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .p-login .login-form input.textfield {}
+  .p-login .login-form input.textfield {
+    padding: 4.8rem 4rem;
+  }
 }
 
-.p-login .login-form .form-group__ttl {
+.p-login .login-form label {
   margin-bottom: 2rem;
+  display: inline-block;
+  color: #fff;
+  font-size: 110%;
 }
 
 .p-login .login-form .form-group+.form-group {
-  margin-top: 4rem;
+  margin-top: 7rem;
 }
 
 .p-login .login-form .submit-btn01 {
-  margin-top: 4rem;
+  margin-top: 12rem;
   display: block;
   font-weight: bold;
   cursor: pointer;
@@ -214,7 +211,7 @@ body {
   border: none;
   border-radius: 0;
   height: 0;
-  padding: 13.336% 0;
+  padding: 10% 0;
   transition: all 0.3s ease;
 }
 
