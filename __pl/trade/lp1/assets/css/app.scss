@@ -22,7 +22,7 @@ body {
   overflow-wrap: break-word;
   font-weight: 300;
   overflow-y: auto;
-  background: #2c058f;
+  background: #07060a;
 
   &.no-scroll {
     overflow: hidden;
@@ -139,7 +139,7 @@ body {
 
         a {
           color: #fff;
-          @include fz(28, 40);
+          @include fz(40, 56);
           font-weight: 300;
         }
       }
@@ -149,19 +149,11 @@ body {
   &-copyright {
     text-align: center;
     color: #fff;
-    @include fz(40, 60);
+    @include fz(46, 60);
     font-weight: 300;
 
     small {
       display: block;
-    }
-  }
-}
-
-@include sp {
-  .footer {
-    &-copyright {
-      font-size: 5rem;
     }
   }
 }
@@ -300,7 +292,31 @@ body {
         font-size: 4rem;
         padding: 3rem 2rem;
         border-width: 2px;
+
+        &-wrap {
+          width: 86%;
+        }
       }
+    }
+  }
+
+  .footer {
+    padding: 6rem 0;
+
+    &-nav {
+      ul {
+        li {
+          padding: 0 4rem 3rem;
+
+          a {
+            font-size: 3.4rem;
+          }
+        }
+      }
+    }
+
+    &-copyright {
+      font-size: 4rem;
     }
   }
 }

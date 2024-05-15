@@ -9,15 +9,15 @@ html {
 }
 
 body {
-  font-family: $gothic;
+  font-family: serif;
   font-size: 14px;
   font-size: 1.4rem;
   line-height: $lh;
   color: $color_base;
   overflow-wrap: break-word;
-  font-weight: 400;
+  font-weight: 300;
   overflow-y: auto;
-  background: #BAA2F6;
+  background: #07060a;
 
   &.no-scroll {
     overflow: hidden;
@@ -53,7 +53,12 @@ ol {
   }
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   margin: 0;
 }
@@ -75,6 +80,7 @@ figure {
   margin: 0;
   padding: 0;
   line-height: 0;
+
   img {
     width: 100%;
   }
@@ -90,7 +96,9 @@ table {
   border-collapse: collapse;
 }
 
-dl,dt,dd {
+dl,
+dt,
+dd {
   margin: 0;
   padding: 0;
 }
@@ -116,18 +124,103 @@ dl,dt,dd {
   *zoom: 1;
 }
 
-div,p {
+div,
+p {
   word-break: break-all;
 }
 
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,nav,picture {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+nav,
+picture {
   margin: 0;
   padding: 0;
   border: 0;
   vertical-align: baseline;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
@@ -153,7 +246,7 @@ img {
   box-shadow: 0 0 10px rgba(#000, 0.3);
 
   @include pc {
-    width: 91.5rem;
+    width: 117.2rem;
 
     &.wrapper-lp2 {
       width: 100%;
@@ -234,8 +327,8 @@ img {
 }
 
 .js-parallax {
-  transition: .2s cubic-bezier(.22,.94,.44,1);
-  will-change: transform,opacity
+  transition: .2s cubic-bezier(.22, .94, .44, 1);
+  will-change: transform, opacity
 }
 
 .c-copy {

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .mt0 {
   margin-top: 0rem !important;
 }
@@ -2778,15 +2777,15 @@ html {
 }
 
 body {
-  font-family: "游ゴシック", "Yu Gothic", "游ゴシック Medium", "Yu Gothic Medium", "MS PGothic", sans-serif;
+  font-family: serif;
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 1.3888888889;
   color: #000;
   overflow-wrap: break-word;
-  font-weight: 400;
+  font-weight: 300;
   overflow-y: auto;
-  background: #BAA2F6;
+  background: #07060a;
 }
 body.no-scroll {
   overflow: hidden;
@@ -2820,7 +2819,12 @@ ol li {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   margin: 0;
 }
@@ -2857,7 +2861,9 @@ table {
   border-collapse: collapse;
 }
 
-dl, dt, dd {
+dl,
+dt,
+dd {
   margin: 0;
   padding: 0;
 }
@@ -2883,18 +2889,103 @@ dl, dt, dd {
   *zoom: 1;
 }
 
-div, p {
+div,
+p {
   word-break: break-all;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, nav, picture {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+nav,
+picture {
   margin: 0;
   padding: 0;
   border: 0;
   vertical-align: baseline;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
@@ -2919,7 +3010,7 @@ img {
 }
 @media screen and (min-width: 769px) {
   .wrapper {
-    width: 91.5rem;
+    width: 117.2rem;
   }
   .wrapper.wrapper-lp2 {
     width: 100%;
@@ -3055,7 +3146,7 @@ img {
 }
 
 .p-after .after-blk .ctn {
-  padding: 0 6rem 8rem;
+  padding: 0 8rem 8rem;
 }
 
 .p-after .after-blk .copy {
@@ -3070,7 +3161,8 @@ img {
   margin-top: 0.75em;
 }
 
-.p-after .after-blk .copy b, .p-after .after-blk .copy strong {
+.p-after .after-blk .copy b,
+.p-after .after-blk .copy strong {
   font-weight: 900;
 }
 
@@ -3093,15 +3185,28 @@ img {
 }
 
 .p-after .after-form {
-  padding: 8rem 0 0;
+  padding: 8rem 2rem 0;
+}
+.p-after .after-form__group:nth-child(n+2) {
+  margin-top: 6rem;
+}
+.p-after .after-form__group label {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+.p-after .after-form__group label .req {
+  color: red;
+  font-size: 100%;
 }
 
 .p-after .after-form__input {
   width: 100%;
-  border: 2px solid #a6a6a6;
+  border: 2px solid #333;
   padding: 2rem 3rem;
   font-size: 4rem;
   line-height: 1.5;
+  border-radius: 0.5rem;
   outline: none;
 }
 
@@ -3114,8 +3219,8 @@ img {
 }
 
 .p-after .after-form__button {
-  max-width: 50rem;
-  margin: 6rem auto 0;
+  max-width: 39rem;
+  margin: 6rem 0 0 auto;
   border: none;
   background: transparent;
   display: block;
@@ -3135,15 +3240,12 @@ img {
 
 @media screen and (max-width: 768px) {
   .p-after .after-form__input {
-    padding: 3rem;
+    padding: 2.6rem;
     border-width: 1px;
-  }
-  .p-after .after-form__button {
-    max-width: 65%;
   }
 }
 .footer {
-  padding: 4rem 0;
+  padding: 6rem 0;
   background: #000;
 }
 .footer-nav ul {
@@ -3158,21 +3260,13 @@ img {
   color: #fff;
   font-size: 2.8rem;
   line-height: 1.4285714286;
-  font-weight: 500;
 }
 .footer-copyright {
   text-align: center;
   color: #fff;
   font-size: 4rem;
   line-height: 1.5;
-  font-weight: 500;
 }
 .footer-copyright small {
   display: block;
-}
-
-@media screen and (max-width: 768px) {
-  .footer-copyright {
-    font-size: 5rem;
-  }
 }

@@ -4301,7 +4301,7 @@ body {
   overflow-wrap: break-word;
   font-weight: 300;
   overflow-y: auto;
-  background: #2c058f;
+  background: #07060a;
 }
 body.no-scroll {
   overflow: hidden;
@@ -4412,26 +4412,21 @@ body.no-scroll {
 }
 .footer-nav ul li a {
   color: #fff;
-  font-size: 2.8rem;
-  line-height: 1.4285714286;
+  font-size: 4rem;
+  line-height: 1.4;
   font-weight: 300;
 }
 .footer-copyright {
   text-align: center;
   color: #fff;
-  font-size: 4rem;
-  line-height: 1.5;
+  font-size: 4.6rem;
+  line-height: 1.3043478261;
   font-weight: 300;
 }
 .footer-copyright small {
   display: block;
 }
 
-@media screen and (max-width: 768px) {
-  .footer-copyright {
-    font-size: 5rem;
-  }
-}
 .p-lp {
   background: #fff;
   overflow: hidden;
@@ -4546,5 +4541,20 @@ body.no-scroll {
     font-size: 4rem;
     padding: 3rem 2rem;
     border-width: 2px;
+  }
+  .p-lp .cta__input-wrap {
+    width: 86%;
+  }
+  .footer {
+    padding: 6rem 0;
+  }
+  .footer-nav ul li {
+    padding: 0 4rem 3rem;
+  }
+  .footer-nav ul li a {
+    font-size: 3.4rem;
+  }
+  .footer-copyright {
+    font-size: 4rem;
   }
 }

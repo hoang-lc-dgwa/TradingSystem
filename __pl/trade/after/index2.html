@@ -40,13 +40,33 @@
         <div class="after-blk after-blk1">
           <div class="ctn">
             <div class="copy">
-              <p>テキストが入ります。テキストが入ります。テキ ストが入ります。テキストが入ります。テキスト が入ります。テキストが入ります。</p>
-              <p>テキストが入ります。テキストが入ります。テキ ストが入ります。テキストが入ります。テキスト が入ります。テキストが入ります。</p>
-              <p>テキストが入ります。テキストが入ります。テキ ストが入ります。テキストが入ります。テキスト が入ります。テキストが入ります。</p>
-              <p>テキストが入ります。テキストが入ります。テキ ストが入ります。テキストが入ります。テキスト が入ります。テキストが入ります。</p>
+              <p>テキストが入ります。テキストが入ります。テキ ストが入ります。テキストが入ります。テキスト が入ります。テキストが入ります。テキストが入ります。</p>
             </div>
             <form action="#" class="after-form">
-              <input type="text" class="after-form__input" placeholder="">
+              <div class="after-form__group">
+                <label for="f_name"><span class="req">*</span>名前</label>
+                <input type="text" id="f_name" class="after-form__input" placeholder="例)田中 太郎">
+              </div>
+              <div class="after-form__group">
+                <label for="f_total"><span class="req">*</span>合計資産</label>
+                <input type="text" id="f_total" class="after-form__input" placeholder="例)1,000,000">
+              </div>
+              <div class="after-form__group">
+                <label for="f_bank"><span class="req">*</span>銀行名</label>
+                <input type="text" id="f_bank" class="after-form__input" placeholder="例)○○銀行">
+              </div>
+              <div class="after-form__group">
+                <label for="f_branch"><span class="req">*</span>支店名</label>
+                <input type="text" id="f_branch" class="after-form__input" placeholder="例)○○支店">
+              </div>
+              <div class="after-form__group">
+                <label for="f_accNumber"><span class="req">*</span>口座番号</label>
+                <input type="number" id="f_accNumber" class="after-form__input" placeholder="例)9999999">
+              </div>
+              <div class="after-form__group">
+                <label for="f_accName"><span class="req">*</span>口座名義(カタカナ)</label>
+                <input type="text" id="f_accName" class="after-form__input" placeholder="例)タナカタロウ">
+              </div>
               <button type="submit" class="after-form__button"><img src="./assets/img/after/button.png" alt="送信"></button>
             </form>
           </div>

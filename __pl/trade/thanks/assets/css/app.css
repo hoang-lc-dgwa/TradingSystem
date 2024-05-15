@@ -4190,7 +4190,7 @@ body {
   overflow-wrap: break-word;
   font-weight: 400;
   overflow-y: auto;
-  background: #BAA2F6;
+  background: #07060a;
 }
 body.no-scroll {
   overflow: hidden;
@@ -4224,7 +4224,12 @@ ol li {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   margin: 0;
 }
@@ -4261,7 +4266,9 @@ table {
   border-collapse: collapse;
 }
 
-dl, dt, dd {
+dl,
+dt,
+dd {
   margin: 0;
   padding: 0;
 }
@@ -4287,18 +4294,103 @@ dl, dt, dd {
   *zoom: 1;
 }
 
-div, p {
+div,
+p {
   word-break: break-all;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, nav, picture {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+nav,
+picture {
   margin: 0;
   padding: 0;
   border: 0;
   vertical-align: baseline;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
@@ -4409,8 +4501,9 @@ img {
 }
 
 .p-thanks {
+  font-family: serif;
   text-align: center;
-  font-weight: 500;
+  font-weight: 300;
   background: #fff;
 }
 
@@ -4441,8 +4534,8 @@ img {
 
 .p-thanks .tks-lead {
   background: #fff;
-  font-size: 6.8rem;
-  line-height: 1.45;
+  font-size: 6.2rem;
+  line-height: 1.25;
   padding: 12rem 3rem;
 }
 .p-thanks .tks-lead__arrow {
@@ -4459,7 +4552,7 @@ img {
   display: inline-block;
 }
 .p-thanks .tks-lead__note {
-  font-size: 70%;
+  font-size: 64%;
   color: #ff3131;
 }
 
@@ -4473,8 +4566,8 @@ img {
 }
 
 .p-thanks .tks-line__copy {
-  font-size: 6.8rem;
-  line-height: 1.45;
+  font-size: 6.2rem;
+  line-height: 1.25;
   margin-top: 12rem;
   margin-bottom: 4rem;
 }
@@ -4495,13 +4588,9 @@ img {
 }
 
 .p-thanks .tks-line-qr {
-  padding: 12rem 0 8rem;
-}
-
-.p-thanks .tks-line-qr__ttl img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
+  padding: 4rem 0 8rem;
+  background: rgb(54, 25, 88);
+  background: linear-gradient(to right, rgb(27, 3, 42), rgb(54, 25, 88));
 }
 
 .p-thanks .tks-line-qr__content {
@@ -4510,35 +4599,35 @@ img {
 }
 
 .p-thanks .tks-line-qr__box {
-  padding: 3rem 1rem;
+  padding: 8rem;
   position: relative;
   z-index: 1;
+  background: #fff;
+  border-radius: 1rem;
+  width: 80%;
+  margin: 7rem auto 0;
 }
 
 .p-thanks .tks-line-qr__copy {
-  font-size: 6.8rem;
-  line-height: 1.45;
+  font-size: 6.2rem;
+  line-height: 1.5;
   margin-top: 2rem;
+  color: #fff;
+  font-weight: 300;
 }
 
 .p-thanks .tks-line-qr__id {
-  font-size: 6.8rem;
-  line-height: 1.45;
-  margin-top: 6rem;
+  font-size: 6.2rem;
+  line-height: 1.25;
   margin-bottom: 4rem;
-  color: #06c21f;
+  text-align: left;
 }
 
 .p-thanks .tks-line-qr__qrcode {
-  max-width: 60%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
-  .p-thanks .tks-line-qr__qrcode {
-    max-width: 60%;
-  }
-}
 .footer {
   padding: 8rem 0;
   background: #000;
@@ -4555,15 +4644,19 @@ img {
   color: #fff;
   font-size: 4rem;
   line-height: 1.4;
-  font-weight: 500;
 }
 .footer-copyright {
   text-align: center;
   color: #fff;
-  font-size: 5.6rem;
-  line-height: 1.25;
-  font-weight: 500;
+  font-size: 4.6rem;
+  line-height: 1.5217391304;
 }
 .footer-copyright small {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .p-thanks .tks-line-qr__qrcode {
+    max-width: 60%;
+  }
 }

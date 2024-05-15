@@ -2988,7 +2988,7 @@ body {
   font-weight: 500;
   overflow-y: auto;
   background: #BAA2F6;
-  background: #FFF;
+  background: #07060a;
 }
 body.no-scroll {
   overflow: hidden;

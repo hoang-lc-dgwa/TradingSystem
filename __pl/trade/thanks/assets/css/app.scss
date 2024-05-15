@@ -6,8 +6,8 @@
 @import "_component/_animation.scss";
 @import "_component/_common.scss";
 
-$fz: 6.8rem;
-$lh: 1.45;
+$fz: 6.2rem;
+$lh: 1.25;
 $color_green: #06c21f;
 $color_purple: #8300b8;
 $color_red: #ff3131;
@@ -15,8 +15,9 @@ $color_blue: #495be9;
 $color_gray: #2e2e2e;
 
 .p-thanks {
+  font-family: serif;
   text-align: center;
-  font-weight: 500;
+  font-weight: 300;
   background: #fff;
 }
 
@@ -68,12 +69,12 @@ $color_gray: #2e2e2e;
   }
 
   &__note {
-    font-size: 70%;
+    font-size: 64%;
     color: #ff3131;
   }
 }
 
-.p-thanks .tks-lead p + p {
+.p-thanks .tks-lead p+p {
   margin-top: 6rem;
 }
 
@@ -105,13 +106,9 @@ $color_gray: #2e2e2e;
 }
 
 .p-thanks .tks-line-qr {
-  padding: 12rem 0 8rem;
-}
-
-.p-thanks .tks-line-qr__ttl img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
+  padding: 4rem 0 8rem;
+  background: rgb(54, 25, 88);
+  background: linear-gradient(to right, rgba(27, 3, 42, 1), rgba(54, 25, 88, 1));
 }
 
 .p-thanks .tks-line-qr__content {
@@ -120,34 +117,33 @@ $color_gray: #2e2e2e;
 }
 
 .p-thanks .tks-line-qr__box {
-  padding: 3rem 1rem;
+  padding: 8rem;
   position: relative;
   z-index: 1;
+  background: #fff;
+  border-radius: 1rem;
+  width: 80%;
+  margin: 7rem auto 0;
 }
 
 .p-thanks .tks-line-qr__copy {
   font-size: $fz;
-  line-height: $lh;
+  line-height: 1.5;
   margin-top: 2rem;
+  color: #fff;
+  font-weight: 300;
 }
 
 .p-thanks .tks-line-qr__id {
   font-size: $fz;
   line-height: $lh;
-  margin-top: 6rem;
   margin-bottom: 4rem;
-  color: $color_green;
+  text-align: left;
 }
 
 .p-thanks .tks-line-qr__qrcode {
-  max-width: 60%;
+  max-width: 100%;
   margin: 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-  .p-thanks .tks-line-qr__qrcode {
-    max-width: 60%;
-  }
 }
 
 .footer {
@@ -166,7 +162,6 @@ $color_gray: #2e2e2e;
         a {
           color: #fff;
           @include fz(40, 56);
-          font-weight: 500;
         }
       }
     }
@@ -175,11 +170,16 @@ $color_gray: #2e2e2e;
   &-copyright {
     text-align: center;
     color: #fff;
-    @include fz(56, 70);
-    font-weight: 500;
+    @include fz(46, 70);
 
     small {
       display: block;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-thanks .tks-line-qr__qrcode {
+    max-width: 60%;
   }
 }
